@@ -10,6 +10,10 @@ Drop these files into any repo → get structured, autonomous PLAN → IMPLEMENT
 
 <br/>
 
+<img src="assets/loop-workflow.gif" alt="Loop Engineering Workflow Animation" width="480"/>
+
+<br/>
+
 [![Framework](https://img.shields.io/badge/Status-Complete-green?style=flat-square)](https://github.com/shivamsingh-007/loop-engineering-stucture)
 [![License](https://img.shields.io/badge/License-MIT-orange?style=flat-square)](#license)
 
