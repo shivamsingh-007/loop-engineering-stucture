@@ -1,0 +1,57 @@
+# state.md — Loop State
+
+This file tracks the status of the **Builder Loop** for this project.
+Agents must update this file after every IMPLEMENT and VERIFY phase.
+
+---
+
+## Goal
+
+- <!-- Describe the current goal for this loop -->
+
+---
+
+## Loop Status
+
+- current_step: <!-- e.g., step-01-setup -->
+- implementation_attempts: 0
+- verification_attempts: 0
+- last_result: <!-- success|fail|partial|pending -->
+- last_error_summary: <!-- short text, or "none" -->
+
+---
+
+## Planned Steps
+
+> Agents: keep these aligned with `tasks/todo.md` and `LOOP.md`.
+
+- [ ] step-01-<!-- name -->
+- [ ] step-02-<!-- name -->
+- [ ] step-03-<!-- name -->
+- [ ] step-04-<!-- name -->
+- [ ] step-05-<!-- name -->
+
+---
+
+## Completed Implementations
+
+> Agents: change `[ ]` to `[x]` when a step is fully verified successful,
+> or `[!]` if stuck after max attempts.
+
+- <!-- No completed steps yet -->
+
+---
+
+## Log
+
+> Append-only log. Most recent entries at the bottom.
+
+- <!-- First entry goes here -->
+
+---
+
+## Final Status (to be filled by agents when goal achieved or blocked)
+
+- goal_status: <!-- achieved|partially_achieved|blocked -->
+- summary: <!-- short narrative -->
+- suggestions_for_human: <!-- what to check / review / change -->

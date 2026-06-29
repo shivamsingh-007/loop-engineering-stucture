@@ -1,0 +1,149 @@
+# Project Context — [PROJECT NAME]
+
+This file provides **high-signal context** for AI coding agents working on this repo.
+Treat it as a README for agents: how the project works, what it should do, and how to operate it safely.
+
+---
+
+## 1. Project Overview
+
+**Goal**: <!-- One or two sentences describing what this project does and who it's for -->
+
+**Key features**:
+- <!-- Feature 1 -->
+- <!-- Feature 2 -->
+- <!-- Feature 3 -->
+
+**Done criteria**:
+- <!-- What "done" looks like for this project -->
+- <!-- How you know the goal is achieved -->
+
+---
+
+## 2. Tech Stack & Architecture
+
+**Stack**:
+- <!-- Framework: React, Next.js, Django, Express, etc. -->
+- <!-- Language: TypeScript, Python, Go, etc. -->
+- <!-- Database: PostgreSQL, MongoDB, SQLite, etc. -->
+- <!-- Key libraries: list the main dependencies -->
+
+**Architecture**:
+- <!-- Describe the high-level architecture -->
+- <!-- How are components organized? -->
+- <!-- What are the main data flows? -->
+
+---
+
+## 3. Folder Structure
+
+```text
+root/
+  context.md           # This file
+  AGENTS.md           # Agent configuration
+  LOOP.md             # Loop definitions
+  state.md            # Loop state
+  STATE.md            # Global triage
+  loop-run-log.md     # Run history
+  tasks/
+    todo.md           # Task board
+    lessons.md        # Self-improvement
+
+  src/                # Source code
+    # ... your structure here
+
+  tests/              # Tests
+  docs/               # Documentation
+```
+
+---
+
+## 4. Build, Test, and Verification Commands
+
+### Build & Dev
+
+```bash
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+### Tests & Lint
+
+```bash
+# Run tests
+npm test
+
+# Lint
+npm run lint
+
+# Type check (if TypeScript)
+npx tsc --noEmit
+```
+
+Agents must:
+- Run at least lint or tests before marking a step as fully successful.
+- Mention in `state.md` which commands were run and their result.
+
+---
+
+## 5. Coding Conventions
+
+<!-- Adapt these to your project's actual conventions -->
+
+- **Language**: <!-- TypeScript preferred / Python preferred / etc. -->
+- **Components**: <!-- Functional components with hooks / etc. -->
+- **Styling**: <!-- Tailwind / CSS Modules / styled-components / etc. -->
+- **Git**:
+  - Small, focused commits.
+  - Commit messages from loops should use:
+    - `loop: <step-id> <status>` pattern.
+
+---
+
+## 6. Loop & Automation Context
+
+This project uses loop engineering with:
+
+- **Global rules**: `loop-rules.md` (the loop constitution — read this first)
+- **Agent configuration**: `AGENTS.md` (project-specific verifier setup, stack, commands)
+- **Loop definitions**: `LOOP.md` (which loops exist, cadence, step breakdown)
+- **State**: `state.md` (per-loop) + `STATE.md` (global triage)
+- **Tasks and lessons**: `tasks/todo.md`, `tasks/lessons.md`
+- **Run history**: `loop-run-log.md`
+
+Agents must:
+- Read `loop-rules.md` on every new session.
+- Obey its PLAN → IMPLEMENT → VERIFY order.
+- Update `context.md`, `tasks/todo.md`, `state.md` before any code change when goals shift.
+
+---
+
+## 7. Agent Behavior & Safety
+
+Agents must:
+
+- Respect file and path denylist (from `multiloop.md`):
+  - Do not modify `node_modules`, build outputs, large binaries, or `.git` internals.
+- Avoid destructive changes:
+  - Preserve working functionality.
+  - Prefer incremental refactors over rewrites.
+- Ask for human review only when:
+  - Conflicts persist beyond allowed attempts.
+  - Requirements become ambiguous or contradict existing context.
+
+The context in this file must remain **accurate**:
+
+- If agents change major architecture or commands, they must:
+  - Update `context.md`.
+  - Update `LOOP.md` where relevant.
+
+---
+
+*This `context.md` is the canonical description of the project.
+All AI agents reading this repo must treat it as truth until it's explicitly updated.*

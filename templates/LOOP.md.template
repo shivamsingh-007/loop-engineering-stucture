@@ -1,0 +1,114 @@
+# LOOP.md — [PROJECT NAME]
+
+This file documents how **[PROJECT NAME]** is operated with loop engineering patterns.
+
+---
+
+## Loop Rules
+
+All loops defined in this file must follow the global loop constitution in `loop-rules.md`.
+
+- **Loop shape**: PLAN → IMPLEMENT → VERIFY → repeat until done.
+- **Memory**: `context.md`, `STATE.md`, `state.md`, `tasks/*.md`, `loop-run-log.md`.
+- **Verification**: internal commands + external verifier agent (see `AGENTS.md`).
+- **Docs-first**: Update `context.md`, `tasks/todo.md`, `state.md` before any code change when goals shift.
+
+---
+
+## Active Loop: Builder Loop (L2 — autonomous, goal-driven)
+
+This repo runs **one main action loop**: the **Builder Loop**.
+
+- **Cadence**: `/loop 30m` during active hours
+- **Model**: <!-- e.g., DeepSeek V4 Flash, Claude Sonnet, GPT-4o -->
+- **Scope**:
+  - Plan → implement → verify → retry, for this project.
+  - Update `state.md` and commit after each step.
+- **State**:
+  - Primary: `state.md` (loop status, steps, attempts, logs).
+  - Multi-loop: `STATE.md`, `loop-run-log.md` (when coexisting with other loops).
+
+The Builder Loop is an **L2 autonomous action loop**: it edits code, runs verifications, and commits without manual intervention, within the boundaries defined in `multiloop.md`.
+
+---
+
+## Multi-loop Coordination
+
+If this repo runs more than one loop (e.g., CI Sweeper, PR Babysitter, Daily Triage), they must respect:
+
+- **Multi-loop rules** defined in `multiloop.md`.
+- Priority ordering (when conflicts arise).
+- Shared denylist and collision detection (acting_on markers, branch ownership).
+
+---
+
+## Recommended Step Breakdown
+
+A typical journey for this project:
+
+1. **Step 1 — Base App Setup**
+   - Initialize project skeleton.
+   - Setup routing and root layout.
+   - Success: app runs, basic layout visible.
+
+2. **Step 2 — Theme & Layout**
+   - Global theme (colors, typography, background).
+   - Sections: <!-- List your main sections here -->
+   - Success: structure in place, placeholder content where needed.
+
+3. **Step 3 — Core Feature Integration**
+   - Implement the primary feature of the project.
+   - Success: feature works end-to-end.
+
+4. **Step 4 — Polish & UX**
+   - Micro-interactions, hover states, transitions.
+   - Performance tuning.
+   - Success: project feels polished and responsive.
+
+5. **Step 5 — Verification & Cleanup**
+   - Tests and linting.
+   - Build check.
+   - Final state update and summary.
+
+Each step is small, testable, and fits the loop's implement–verify pattern.
+
+---
+
+## Worktrees & Branching
+
+To avoid collisions and keep history clean:
+
+- **Worktrees**:
+  - For unattended experiments, use a separate git worktree per fix/feature.
+  - Once the verifier accepts a change, merge back into the main branch.
+- **Branch ownership**:
+  - Builder Loop typically owns a feature branch (e.g., `loop/builder`).
+  - CI Sweeper owns CI-related branches or temporary fix branches.
+
+---
+
+## Budget & Observability
+
+- Token caps and loop budget: respect global limits.
+- Run history:
+  - `loop-run-log.md` — append-only log across loops.
+  - `state.md` — per-step details for Builder Loop.
+- Kill switch:
+  - `STATE.md` may contain a `loop-pause-all` flag.
+  - If present and set, Builder Loop must stop acting and only log observability.
+
+---
+
+## Safety & Gates
+
+- No auto-merge to `main` from Builder Loop:
+  - Changes must be reviewed or merged from a feature branch.
+- Denylist (from `multiloop.md`):
+  - `.git/`, `node_modules/`, `dist/`, `build/`, `coverage/`, binary assets unless explicitly allowed.
+- Live loop state:
+  - `state.md` at repo root for the Builder Loop.
+  - Global `STATE.md` for cross-loop triage.
+
+---
+
+*This file is both documentation and the seed for the loop that builds and maintains this project.*

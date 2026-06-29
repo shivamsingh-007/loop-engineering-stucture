@@ -1,0 +1,63 @@
+# tasks/lessons.md — Self-Improvement & Mistake Patterns
+
+This file is the **learning store** for agents.
+Every time a user corrects the agent or a loop iteration fails, record a lesson here.
+
+Agents must read relevant lessons at the start of a session.
+
+---
+
+## 1. Usage Rules
+
+- After ANY correction by the user:
+  - Add a new lesson entry:
+    - Context.
+    - Mistake.
+    - New rule(s).
+- Lessons should be:
+  - Short.
+  - Actionable.
+  - Mapped to specific domains (frontend, backend, testing, loop behavior, etc.).
+- Before planning/implementing:
+  - Scan for lessons relevant to the current task.
+
+---
+
+## 2. Lessons
+
+### L-001 — <!-- Lesson Title -->
+
+- **Context**:
+  - <!-- When/where this happened -->
+- **Mistake**:
+  - <!-- What went wrong -->
+- **Rules**:
+  - <!-- Rule(s) to avoid repeating this -->
+
+### L-002 — <!-- Lesson Title -->
+
+- **Context**:
+  - <!-- When/where this happened -->
+- **Mistake**:
+  - <!-- What went wrong -->
+- **Rules**:
+  - <!-- Rule(s) to avoid repeating this -->
+
+---
+
+## 3. Pending Lessons
+
+Agents: use this section for notes before they are formalized into full entries.
+
+- <!-- yyyy-mm-dd — [agent] Note about a potential lesson -->
+
+---
+
+## 4. How Agents Use This File
+
+- On session start:
+  - Read `tasks/lessons.md`.
+  - Apply domain-specific rules when planning and implementing.
+- When new lessons are added:
+  - They become rules for future sessions.
+  - Agents should avoid repeating the same mistake category.

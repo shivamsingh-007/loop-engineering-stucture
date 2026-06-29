@@ -1,0 +1,57 @@
+# tasks/todo.md — Task Plan & Progress
+
+This file is the **task board** for AI agents working on this project.
+Agents must update this file on every non-trivial loop iteration.
+
+---
+
+## 1. Current Goal
+
+- <!-- Describe the current goal here -->
+
+---
+
+## 2. Active Tasks (Checklist)
+
+### Step 1 — <!-- Step Name -->
+
+- [ ] <!-- Task 1 -->
+- [ ] <!-- Task 2 -->
+- [ ] <!-- Task 3 -->
+
+### Step 2 — <!-- Step Name -->
+
+- [ ] <!-- Task 1 -->
+- [ ] <!-- Task 2 -->
+
+### Step 3 — <!-- Step Name -->
+
+- [ ] <!-- Task 1 -->
+- [ ] <!-- Task 2 -->
+
+---
+
+## 3. In-Progress Notes
+
+Agents: append small notes here while working on tasks.
+
+- <!-- yyyy-mm-dd — [agent] Note entry -->
+
+---
+
+## 4. Review & Results
+
+Agents: after each major loop iteration, summarize outcomes.
+
+- Last iteration summary:
+  - Step: <!-- step-id -->
+  - Result: <!-- success|fail|pending -->
+  - Key changes: <!-- what was done -->
+  - Follow-up tasks: <!-- what's next -->
+
+---
+
+## 5. Backlog / Future Ideas
+
+- <!-- Backlog item 1 -->
+- <!-- Backlog item 2 -->
