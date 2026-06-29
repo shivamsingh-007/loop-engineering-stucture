@@ -1,0 +1,60 @@
+<svg width="580" height="280" viewBox="0 0 580 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="580" height="280" rx="12" fill="#FFFBF0"/>
+  <rect width="580" height="280" rx="12" stroke="#D4A574" stroke-width="1"/>
+  
+  <!-- Trigger -->
+  <rect x="200" y="10" width="180" height="40" rx="8" fill="#FFE066"/>
+  <text x="290" y="35" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#2D2D2D">TRIGGER (goal)</text>
+  <line x1="290" y1="50" x2="290" y2="70" stroke="#D4A574" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- PLAN -->
+  <rect x="40" y="75" width="130" height="50" rx="10" fill="#FF8C42"/>
+  <text x="105" y="105" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#FFFFFF">PLAN</text>
+  
+  <!-- Arrow PLAN → IMPLEMENT -->
+  <line x1="170" y1="100" x2="210" y2="100" stroke="#D4A574" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- IMPLEMENT -->
+  <rect x="215" y="75" width="140" height="50" rx="10" fill="#D4A574"/>
+  <text x="285" y="105" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#FFFFFF">IMPLEMENT</text>
+  
+  <!-- Arrow IMPLEMENT → VERIFY -->
+  <line x1="355" y1="100" x2="395" y2="100" stroke="#D4A574" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- VERIFY -->
+  <rect x="400" y="75" width="140" height="50" rx="10" fill="#FCA5A5"/>
+  <text x="470" y="105" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#2D2D2D">VERIFY</text>
+  
+  <!-- Arrow VERIFY → DECIDE -->
+  <line x1="470" y1="125" x2="470" y2="155" stroke="#D4A574" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- DECIDE -->
+  <rect x="200" y="160" width="180" height="50" rx="10" fill="#FFE066"/>
+  <text x="290" y="190" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#2D2D2D">DECIDE</text>
+  <text x="290" y="205" text-anchor="middle" font-family="monospace" font-size="9" fill="#666666">(retry or advance)</text>
+  
+  <!-- Arrow DECIDE → back to PLAN -->
+  <path d="M200,185 L105,185 L105,125" fill="none" stroke="#FF8C42" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arrow-orange)"/>
+  
+  <!-- Arrow DECIDE → UPDATE -->
+  <line x1="290" y1="210" x2="290" y2="230" stroke="#D4A574" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- UPDATE & COMMIT -->
+  <rect x="170" y="235" width="240" height="35" rx="8" fill="#FF8C42"/>
+  <text x="290" y="257" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#FFFFFF">UPDATE STATE &amp; COMMIT</text>
+  
+  <!-- Arrow back to PLAN (repeat) -->
+  <path d="M170,252 L40,252 L40,100" fill="none" stroke="#FF8C42" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arrow-orange)"/>
+  <text x="25" y="180" font-family="monospace" font-size="9" fill="#FF8C42" transform="rotate(-90, 25, 180)">REPEAT</text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#D4A574"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#FF8C42"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,24 @@
+<svg width="600" height="180" viewBox="0 0 600 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="180" rx="16" fill="#FFFBF0"/>
+  <rect width="600" height="180" rx="16" stroke="#D4A574" stroke-width="2"/>
+  
+  <!-- Loop Icon -->
+  <g transform="translate(80, 90)">
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#FF8C42" stroke-width="4" stroke-dasharray="20 10"/>
+    <polygon points="40,-20 55,-10 40,0" fill="#FF8C42"/>
+    <circle cx="0" cy="0" r="35" fill="#FFE066" opacity="0.3"/>
+    <text x="0" y="8" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#2D2D2D">L-E</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="170" y="75" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#2D2D2D">Loop Engineering</text>
+  <text x="170" y="105" font-family="Georgia, serif" font-size="22" fill="#D4A574">Structure</text>
+  
+  <!-- Tagline -->
+  <text x="170" y="135" font-family="monospace" font-size="12" fill="#666666">PLAN → IMPLEMENT → VERIFY → repeat</text>
+  
+  <!-- Badge -->
+  <rect x="170" y="148" width="120" height="22" rx="4" fill="#FFE066"/>
+  <text x="230" y="163" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#2D2D2D">FRAMEWORK</text>
+</svg>

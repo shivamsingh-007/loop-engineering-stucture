@@ -1,0 +1,44 @@
+<svg width="500" height="200" viewBox="0 0 500 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="500" height="200" rx="12" fill="#FFFBF0"/>
+  <rect width="500" height="200" rx="12" stroke="#D4A574" stroke-width="1"/>
+  
+  <!-- Title -->
+  <text x="250" y="25" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#2D2D2D">MULTI-LOOP COORDINATION</text>
+  
+  <!-- STATE.md Hub -->
+  <rect x="190" y="80" width="120" height="40" rx="8" fill="#FF8C42"/>
+  <text x="250" y="105" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#FFFFFF">STATE.md</text>
+  <text x="250" y="72" text-anchor="middle" font-family="monospace" font-size="9" fill="#666666">(triage hub)</text>
+  
+  <!-- Builder Loop -->
+  <rect x="30" y="140" width="100" height="35" rx="6" fill="#D4A574"/>
+  <text x="80" y="162" text-anchor="middle" font-family="monospace" font-size="9" fill="#FFFFFF">Builder Loop</text>
+  <line x1="130" y1="150" x2="190" y2="110" stroke="#D4A574" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- CI Sweeper -->
+  <rect x="200" y="140" width="100" height="35" rx="6" fill="#FCA5A5"/>
+  <text x="250" y="162" text-anchor="middle" font-family="monospace" font-size="9" fill="#2D2D2D">CI Sweeper</text>
+  <line x1="250" y1="140" x2="250" y2="120" stroke="#FCA5A5" stroke-width="2" marker-end="url(#arrow-red)"/>
+  
+  <!-- PR Babysitter -->
+  <rect x="370" y="140" width="100" height="35" rx="6" fill="#FFE066"/>
+  <text x="420" y="162" text-anchor="middle" font-family="monospace" font-size="9" fill="#2D2D2D">PR Babysitter</text>
+  <line x1="370" y1="150" x2="310" y2="110" stroke="#FFE066" stroke-width="2" marker-end="url(#arrow-yellow)"/>
+  
+  <!-- Collision Warning -->
+  <text x="250" y="195" text-anchor="middle" font-family="monospace" font-size="9" fill="#FCA5A5">One owner per branch per hour</text>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#D4A574"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#FCA5A5"/>
+    </marker>
+    <marker id="arrow-yellow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#FFE066"/>
+    </marker>
+  </defs>
+</svg>

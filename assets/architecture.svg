@@ -1,0 +1,77 @@
+<svg width="500" height="350" viewBox="0 0 500 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="500" height="350" rx="12" fill="#FFFBF0"/>
+  <rect width="500" height="350" rx="12" stroke="#D4A574" stroke-width="1"/>
+  
+  <!-- Global Layer Label -->
+  <text x="250" y="25" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#FF8C42">GLOBAL LAYER (same in every repo)</text>
+  
+  <!-- Global Layer Background -->
+  <rect x="20" y="35" width="460" height="110" rx="8" fill="#FFE066" opacity="0.3"/>
+  <rect x="20" y="35" width="460" height="110" rx="8" stroke="#FF8C42" stroke-width="2" stroke-dasharray="6 3"/>
+  
+  <!-- Global Files -->
+  <rect x="35" y="50" width="120" height="40" rx="6" fill="#FF8C42"/>
+  <text x="95" y="75" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#FFFFFF">loop-rules.md</text>
+  
+  <rect x="170" y="50" width="120" height="40" rx="6" fill="#FF8C42"/>
+  <text x="230" y="75" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#FFFFFF">AGENT_LOOP.md</text>
+  
+  <rect x="305" y="50" width="100" height="40" rx="6" fill="#FF8C42"/>
+  <text x="355" y="75" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#FFFFFF">multiloop.md</text>
+  
+  <rect x="50" y="100" width="90" height="35" rx="6" fill="#D4A574"/>
+  <text x="95" y="122" text-anchor="middle" font-family="monospace" font-size="9" fill="#FFFFFF">STATE.md</text>
+  
+  <rect x="160" y="100" width="140" height="35" rx="6" fill="#D4A574"/>
+  <text x="230" y="122" text-anchor="middle" font-family="monospace" font-size="9" fill="#FFFFFF">loop-run-log.md</text>
+  
+  <rect x="320" y="100" width="100" height="35" rx="6" fill="#FCA5A5"/>
+  <text x="370" y="122" text-anchor="middle" font-family="monospace" font-size="9" fill="#2D2D2D">README.md</text>
+  
+  <!-- Divider -->
+  <line x1="30" y1="155" x2="470" y2="155" stroke="#D4A574" stroke-width="2"/>
+  
+  <!-- Project Layer Label -->
+  <text x="250" y="175" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#D4A574">PROJECT-SPECIFIC LAYER (customized per repo)</text>
+  
+  <!-- Project Layer Background -->
+  <rect x="20" y="185" width="460" height="150" rx="8" fill="#D4A574" opacity="0.15"/>
+  <rect x="20" y="185" width="460" height="150" rx="8" stroke="#D4A574" stroke-width="1"/>
+  
+  <!-- Project Files Row 1 -->
+  <rect x="35" y="200" width="100" height="35" rx="6" fill="#D4A574"/>
+  <text x="85" y="222" text-anchor="middle" font-family="monospace" font-size="9" fill="#FFFFFF">AGENTS.md</text>
+  
+  <rect x="150" y="200" width="90" height="35" rx="6" fill="#D4A574"/>
+  <text x="195" y="222" text-anchor="middle" font-family="monospace" font-size="9" fill="#FFFFFF">LOOP.md</text>
+  
+  <rect x="255" y="200" width="100" height="35" rx="6" fill="#D4A574"/>
+  <text x="305" y="222" text-anchor="middle" font-family="monospace" font-size="9" fill="#FFFFFF">context.md</text>
+  
+  <rect x="370" y="200" width="90" height="35" rx="6" fill="#FFE066"/>
+  <text x="415" y="222" text-anchor="middle" font-family="monospace" font-size="9" fill="#2D2D2D">state.md</text>
+  
+  <!-- Project Files Row 2 -->
+  <rect x="50" y="250" width="130" height="35" rx="6" fill="#FFE066"/>
+  <text x="115" y="272" text-anchor="middle" font-family="monospace" font-size="9" fill="#2D2D2D">tasks/todo.md</text>
+  
+  <rect x="200" y="250" width="140" height="35" rx="6" fill="#FFE066"/>
+  <text x="270" y="272" text-anchor="middle" font-family="monospace" font-size="9" fill="#2D2D2D">tasks/lessons.md</text>
+  
+  <rect x="360" y="250" width="100" height="35" rx="6" fill="#FCA5A5" opacity="0.7"/>
+  <text x="410" y="272" text-anchor="middle" font-family="monospace" font-size="9" fill="#2D2D2D">templates/*</text>
+  
+  <!-- Legend -->
+  <rect x="35" y="295" width="12" height="12" rx="2" fill="#FF8C42"/>
+  <text x="52" y="305" font-family="monospace" font-size="9" fill="#666666">= Global core</text>
+  
+  <rect x="150" y="295" width="12" height="12" rx="2" fill="#D4A574"/>
+  <text x="167" y="305" font-family="monospace" font-size="9" fill="#666666">= Project config</text>
+  
+  <rect x="280" y="295" width="12" height="12" rx="2" fill="#FFE066"/>
+  <text x="297" y="305" font-family="monospace" font-size="9" fill="#666666">= State/tasks</text>
+  
+  <rect x="395" y="295" width="12" height="12" rx="2" fill="#FCA5A5"/>
+  <text x="412" y="305" font-family="monospace" font-size="9" fill="#666666">= Templates</text>
+</svg>
